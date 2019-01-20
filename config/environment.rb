@@ -19,3 +19,5 @@ DB = ActiveRecord::Base.establish_connection(connection_details)
 if ENV["ACTIVE_RECORD_ENV"] == "test"
   ActiveRecord::Migration.verbose = false
 end
+
+ActiveRecord::Base.logger = nil
